@@ -1,0 +1,45 @@
+version: 2
+
+sources:
+  - name: raw
+    database: HEALTHCARE_CLAIMS
+    schema: SILVER
+    description: "Synthetic Healthcare Clinical and Claims raw data"
+
+    tables:
+      - name: PATIENTS
+        description: "Patient demographic information"
+      - name: ENCOUNTERS
+        description: "Patient encounters/visits"
+      - name: CLAIMS
+        description: "Insurance claims"
+      - name: CLAIMS_TX
+        description: "Claims transactions - payments and adjustments"
+      - name: CONDITIONS
+        description: "Patient diagnosed conditions"
+      - name: PROCEDURES
+        description: "Medical procedures performed"
+      - name: PROVIDERS
+        description: "Healthcare providers"
+      - name: ORGANIZATIONS
+        description: "Healthcare organizations"
+      - name: PAYERS
+        description: "Insurance payers"
+      - name: PAYER_TRANSITIONS
+        description: "Patient payer/insurance changes over time"
+      - name: MEDICATIONS
+        description: "Patient medications"
+      - name: IMMUNIZATIONS
+        description: "Patient immunizations"
+      - name: OBSERVATIONS
+        description: "Clinical observations and vitals"
+      - name: DEVICES
+        description: "Medical devices used"
+      - name: IMAGING_STUDIES
+        description: "Imaging studies performed"
+      - name: SUPPLIES
+        description: "Medical supplies used"
+      - name: CARE_PLANS
+        description: "Patient care plans"
+      - name: ALLERGIES
+        description: "Patient allergies"
